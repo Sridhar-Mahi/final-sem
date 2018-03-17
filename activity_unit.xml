@@ -1,0 +1,663 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Pokemon"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/shan" />
+
+        <TextView
+            android:id="@+id/text_view_id_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="34dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="15dp"
+            android:text="Find Projects / Experts"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_text_edit"
+            android:drawableRight="@drawable/my_icon"
+            android:hint="Enter key word to search"
+            android:textSize="16dp"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null"
+            android:layout_marginTop="13dp"
+            android:layout_below="@+id/text_view_id_3"
+            android:layout_alignLeft="@+id/text_view_id_3"
+            android:layout_alignStart="@+id/text_view_id_3" />
+
+
+
+        <TextView
+            android:id="@+id/text_view_id_4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_below="@+id/search"
+            android:layout_alignLeft="@+id/search"
+            android:layout_alignStart="@+id/search"
+            android:layout_marginTop="35dp" />
+
+        <Button
+            android:id="@+id/btnDone5"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:background="#086A87"
+            android:hint="Discover from 1000+ Project Domains"
+            android:textColorHint="#ffffff"
+            android:textSize="15dp"
+            android:padding="15dp"
+            android:singleLine="true"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="406dp"
+            android:layout_marginBottom="27dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/text_view_id_4"
+            android:layout_alignStart="@+id/text_view_id_4" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Featured Project Centers"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="34dp"
+                    android:layout_marginTop="15dp"
+                    android:text="View All"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="5dp"
+                android:layout_height="80dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@drawable/s" />
+
+                    <TextView
+
+                        android:id="@+id/btnGallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:drawablePadding="5dp"
+                        android:singleLine="true"
+                        android:text="Spiro Solutions Pvt. Ltd"
+                        android:drawableBottom="@drawable/anna"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:paddingLeft="30dip"
+                        android:paddingRight="26dip"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="5dp"
+                android:layout_height="80dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@drawable/s" />
+
+                    <TextView
+
+                        android:id="@+id/btnGallery1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:drawablePadding="5dp"
+                        android:singleLine="true"
+                        android:text="Spiro Solutions Pvt. Ltd"
+                        android:drawableBottom="@drawable/anna"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:paddingLeft="30dip"
+                        android:paddingRight="26dip"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="5dp"
+                android:layout_height="80dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@drawable/s" />
+
+                    <TextView
+
+                        android:id="@+id/btnGallery2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:drawablePadding="5dp"
+                        android:singleLine="true"
+                        android:text="Spiro Solutions Pvt. Ltd"
+                        android:drawableBottom="@drawable/anna"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:paddingLeft="30dip"
+                        android:paddingRight="26dip"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="5dp"
+                android:layout_height="80dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@drawable/s" />
+
+                    <TextView
+
+                        android:id="@+id/btnGallery3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:drawablePadding="5dp"
+                        android:singleLine="true"
+                        android:text="Spiro Solutions Pvt. Ltd"
+                        android:drawableBottom="@drawable/anna"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:paddingLeft="30dip"
+                        android:paddingRight="26dip"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="5dp"
+                android:layout_height="80dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@drawable/s" />
+
+                    <TextView
+
+                        android:id="@+id/btnGallery4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:drawablePadding="5dp"
+                        android:singleLine="true"
+                        android:text="Spiro Solutions Pvt. Ltd"
+                        android:drawableBottom="@drawable/anna"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:paddingLeft="30dip"
+                        android:paddingRight="26dip"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="5dp"
+                android:layout_height="80dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@drawable/s" />
+
+                    <TextView
+
+                        android:id="@+id/btnGallery5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:drawablePadding="5dp"
+                        android:singleLine="true"
+                        android:text="Spiro Solutions Pvt. Ltd"
+                        android:drawableBottom="@drawable/anna"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:paddingLeft="30dip"
+                        android:paddingRight="26dip"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="5dp"
+                android:layout_height="80dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@drawable/s" />
+
+                    <TextView
+
+                        android:id="@+id/btnGallery6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:drawablePadding="5dp"
+                        android:singleLine="true"
+                        android:text="Spiro Solutions Pvt. Ltd"
+                        android:drawableBottom="@drawable/anna"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:paddingLeft="30dip"
+                        android:paddingRight="26dip"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="5dp"
+                android:layout_height="80dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@drawable/s" />
+
+                    <TextView
+
+                        android:id="@+id/btnGallery7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:drawablePadding="5dp"
+                        android:singleLine="true"
+                        android:text="Spiro Solutions Pvt. Ltd"
+                        android:drawableBottom="@drawable/anna"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:paddingLeft="30dip"
+                        android:paddingRight="26dip"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="5dp"
+                android:layout_height="80dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@drawable/s" />
+
+                    <TextView
+
+                        android:id="@+id/btnGallery8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:drawablePadding="5dp"
+                        android:singleLine="true"
+                        android:text="Spiro Solutions Pvt. Ltd"
+                        android:drawableBottom="@drawable/anna"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:paddingLeft="30dip"
+                        android:paddingRight="26dip"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="5dp"
+                android:layout_height="80dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@drawable/s" />
+
+                    <TextView
+
+                        android:id="@+id/btnGallery9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:drawablePadding="5dp"
+                        android:singleLine="true"
+                        android:text="Spiro Solutions Pvt. Ltd"
+                        android:drawableBottom="@drawable/anna"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:paddingLeft="30dip"
+                        android:paddingRight="26dip"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#3D3C3A">
+
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/imageView2"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginStart="17dp"
+                    android:layout_toLeftOf="@+id/imageView2"
+                    android:layout_toStartOf="@+id/imageView2"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/d" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="23dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_toLeftOf="@+id/imageView3"
+                    android:layout_toStartOf="@+id/imageView3"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/c" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView4"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_toLeftOf="@+id/imageView4"
+                    android:layout_toStartOf="@+id/imageView4"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/m" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginRight="21dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/n" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="175dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/text_view_id_4"
+            android:layout_width="329dp"
+            android:layout_height="84dp"
+            android:gravity="center"
+            android:text="OTP has been sent to you on your"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_weight="1.30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/text_view_id_4"
+            android:gravity="center"
+            android:text="Mobile Number Please Enter it below"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:maxLength="4"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#ff6861" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/text_view_id_4"
+        android:layout_weight="0.24"
+        android:gravity="center"
+        android:text="Didn't received OTP?"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="0.58">
+
+        <ImageView
+            android:id="@+id/test_image"
+            android:layout_width="192dp"
+            android:layout_height="186dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="163dp" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnLinkToLoginScreen"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dip"
+        android:background="@null"
+        android:gravity="center"
+        android:text="@string/btn_link_to_resend"
+        android:textAllCaps="false"
+        android:textColor="@color/btn_logut_bg"
+        android:textSize="35dp"
+        android:layout_weight="0.06" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dip"
+        android:background="#086A87"
+        android:text="Next"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="425dp" />
+
+
+</LinearLayout>
+
+
